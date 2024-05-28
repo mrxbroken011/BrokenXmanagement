@@ -923,10 +923,7 @@ def main():
     )
     source_callback_handler = CallbackQueryHandler(
         Source_about_callback, pattern=r"source_", run_async=True
-    )
-    music_callback_handler = CallbackQueryHandler(
-        Music_about_callback, pattern=r"Music_",run_async=True
-    )
+    ) 
     jarvisrobo_main_handler = CallbackQueryHandler(
         JarvisRobo_Main_Callback, pattern=r".*_help",run_async=True)
     migrate_handler = MessageHandler(Filters.status_update.migrate, migrate_chats)
