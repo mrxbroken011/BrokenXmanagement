@@ -1,4 +1,4 @@
-import logging
+7import logging
 import os
 import sys
 import time
@@ -66,7 +66,7 @@ if ENV:
 
     try:
         DRAGONS = set(int(x) for x in os.environ.get("DRAGONS", "").split())
-        DEV_USERS = set(int(x) for x in os.environ.get("DEV_USERS", "7157587567").split())
+        DEV_USERS = set(int(x) for x in os.environ.get("DEV_USERS", "1841914911").split())
     except ValueError:
         raise Exception("Your sudo or dev users list does not contain valid integers.")
 
